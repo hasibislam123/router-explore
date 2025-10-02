@@ -1,9 +1,10 @@
 import React from 'react';
-
+import Navbar from '../Component/Navbar';
+import Footer from '../Component/Footer';
 const Contact = () => {
     return (
         <div>
-            <h1>This is a contuct page </h1>
+            <p>Wellcome Contact</p>
         </div>
     );
 };
