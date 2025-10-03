@@ -1,17 +1,27 @@
-import React from 'react';
+import React, {  useState } from 'react';
 import Navbar from '../Component/Navbar';
 import Footer from '../Component/Footer';
-import { Outlet } from 'react-router';
+import { Outlet, useNavigation } from 'react-router';  // <-- dom ব্যবহার করবে
+import LoadingSpinner from '../Component/LoadingSpinner';
+import { CartContext } from '../../Peoviders/CartContext';
+
+
 
 const RootLayout = () => {
+  const navigation = useNavigation();
+  console.log(navigation.state);
+   const [cart, setCart] = useState([])
+
   return (
-    <div>
+    <CartContext.Provider value={{cart, setCart}}>
       <Navbar />
-      <main className='min-h-[calc(100vh-287px)] mx-auto p-4'>
-        <Outlet />
-      </main>
+      {navigation?.state === 'loading'
+        ? <LoadingSpinner></LoadingSpinner>
+        : <main className="min-h-[calc(100vh-287px)] mx-auto p-4">
+          <Outlet />
+        </main>}
       <Footer />
-    </div>
+    </CartContext.Provider>
   );
 };
 

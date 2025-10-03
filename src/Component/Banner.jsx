@@ -4,7 +4,7 @@ import Footer from '../Component/Footer';
 
 const Banner = () => {
     return (
-         <div className="grid grid-cols-1 md:grid-cols-2 sm:max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] xl:max-w-[1200px] mx-auto">
+         <div className="  grid rounded-4xl grid-cols-1 md:grid-cols-2 sm:max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] xl:max-w-[1200px] mx-auto">
 
   {/* Left Section - Text */}
   <div className="flex justify-center items-center px-6 py-10 bg-[#fff0f3]">
