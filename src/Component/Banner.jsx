@@ -9,10 +9,10 @@ const Banner = () => {
   {/* Left Section - Text */}
   <div className="flex justify-center items-center px-6 py-10 bg-[#fff0f3]">
     <div className="p-4 bg-[#ffb3c1] rounded-2xl shadow-lg">
-      <h1 className="text-3xl md:text-4xl mb-5 font-semibold leading-snug">
+      <h1 className="text-3xl md:text-4xl mb-5 font-semibold leading-snug text-[#03045e]">
         Keep your body <br /> fresh with a good <br /> perfume
       </h1>
-      <p className="text-sm md:text-base mb-5">
+      <p className="text-sm md:text-base mb-5 text-[#080ba4]">
         Lorem ipsum dolor sit amet consectetur. Scelerisque amet cursus eget amet sit ut. 
         In imperdiet suspendisse adipiscing eu purus. Eget nisl cursus quis nibh. Sed sit amet facilisi viverra.
       </p>

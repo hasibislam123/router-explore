@@ -11,6 +11,8 @@ import PlantDetails from './Pages/PlantDetails.jsx';
 import axios from 'axios';
 import LoadingSpinner from './Component/LoadingSpinner.jsx';
 import Cart from './Pages/Cart.jsx';
+import Login from './Pages/login.jsx';
+import SignIn from './Pages/SignIn.jsx';
 
 const router = createBrowserRouter([
   {
@@ -40,7 +42,15 @@ const router = createBrowserRouter([
         },
       },
       { path: 'Cart', 
-        element: <Cart/> },
+        element: <Cart/> 
+      },
+
+      { path: 'Login', 
+        element: <Login/> 
+      },
+      { path: 'SignIn', 
+        element: <SignIn/> 
+      },
     ],
   },
 ]);

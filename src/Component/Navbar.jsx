@@ -45,7 +45,7 @@ const Navbar = () => {
       <div className="flex justify-baseline gap-3">
 
         <div className=" hidden md:block">
-          <button className="btn btn-neutral btn-outline ml-30 w-[94px]">Log In</button>
+          <Link to="/login" className="hover:text-neutral btn btn-neutral btn-outline ml-30 w-[94px]">LogIn</Link>
         </div>
 
         <div className="flex items-center gap-3">
@@ -78,7 +78,7 @@ const Navbar = () => {
           <Link to="/contact" onClick={() => setOpen(false)}>Contact</Link>
           <Link to="/Cart" onClick={() => setOpen(false)}>Cart</Link>
           <Link to="/about" onClick={() => setOpen(false)}>About</Link>
-          <button className="btn btn-neutral btn-outline w-32" onClick={() => setOpen(false)}>Log In</button>
+          <Link to="/Login" className="hover:text-neutral btn btn-neutral btn-outline ml-30 w-[94px]">LogIn</Link>
         </div>
       )}
     </div>

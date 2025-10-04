@@ -17,7 +17,7 @@ const RootLayout = () => {
       <Navbar />
       {navigation?.state === 'loading'
         ? <LoadingSpinner></LoadingSpinner>
-        : <main className="min-h-[calc(100vh-287px)] mx-auto p-4">
+        : <main className="min-h-[calc(100vh-287px)] mx-auto px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20">
           <Outlet />
         </main>}
       <Footer />
